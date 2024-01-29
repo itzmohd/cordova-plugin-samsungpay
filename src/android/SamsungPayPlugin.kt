@@ -288,7 +288,7 @@ class SamsungPayPlugin : CordovaPlugin() {
         payloadEncrypted: String
     ) {
         val tokenizationProvider = AddCardInfo.PROVIDER_VISA
-        val cardType = Card.CARD_TYPE_DEBIT
+        val cardType = Card.CARD_TYPE_CREDIT_DEBIT
         val cardDetail = Bundle()
         cardDetail.putBoolean(AddCardInfo.EXTRA_SAMSUNG_PAY_CARD, false)
         cardDetail.putString(AddCardInfo.EXTRA_PROVISION_PAYLOAD, payloadEncrypted)
